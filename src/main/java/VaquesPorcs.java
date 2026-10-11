@@ -24,14 +24,14 @@ public class VaquesPorcs {
         double total;
         total = vaques + porcs;
 
-        //percentatge
+
         double percentatge_vaques = (vaques * 100.0) / total;
         double percentatge_porcs = (porcs * 100.0) / total;
 
         System.out.println("Percentatge de vaques: " + percentatge_vaques + "%");
         System.out.println("Percentatge de porcs: " + percentatge_porcs + "%");
 
-        // Compara els percentatges
+       
         if (percentatge_vaques > percentatge_porcs) {
             System.out.println("Hi ha més vaques.");
         } else if (percentatge_vaques < percentatge_porcs) {

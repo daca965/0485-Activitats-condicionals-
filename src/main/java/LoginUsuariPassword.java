@@ -1,3 +1,5 @@
+
+import java.util.Scanner;
 // Activitat 20 — Login amb usuari i contrasenya
 public class LoginUsuariPassword {
     public static void main(String[] args) {
@@ -7,5 +9,26 @@ public class LoginUsuariPassword {
 
         // TODO: demana username i password per teclat
         //   Digues si són correctes o no
+
+        Scanner teclat = new Scanner (System.in);
+        System.out.println("Introdueix el nom d'usuari:");
+        String usuari = teclat.next();
+
+        System.out.println("Introdueix la contrasenya:");
+        String contrasenya = teclat.next();
+
+        if (usuari.equals(username)) {
+        if (contrasenya.equals(password)) {
+
+        System.out.println("Login correcte");
+        } 
+        else {
+        System.out.println("Password incorrecta");
+        }
+
+        } else {
+        System.out.println("Usuari incorrecte");
+        }
+
     }
 }

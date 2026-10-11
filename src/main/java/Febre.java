@@ -10,19 +10,17 @@ public class Febre {
     
 
          Scanner teclat = new Scanner(System.in);
-         int temperatura;
-         System.out.println("la teva temperatura es: ");
-         temperatura = teclat.nextInt();
-         if(temperatura >=37) {
-            System.out.println("has d'anar cap a casa ");
-           
-          }
 
-          else{ 
-           System.out.println("estas be"); 
-           }
-          
+        double temperatura;
+
+        System.out.print("Introdueix la teva temperatura: ");
+        temperatura = teclat.nextDouble();
+
+        if (temperatura > 37) {
+            System.out.println("Tens febre, has d'anar cap a casa a descansar!!");
+        } else {
+            System.out.println("Pots quedar-te.");
+        }
     }
-    
- }   
+}
         

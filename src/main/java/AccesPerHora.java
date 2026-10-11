@@ -13,7 +13,7 @@ public class AccesPerHora {
        Calendar calendar = Calendar.getInstance();
         int hour = calendar.get(Calendar.HOUR_OF_DAY);
        
-        if(hour>8) {
+        if(hour>=8) {
             System.out.println("pots accedir");}
 
         else {
